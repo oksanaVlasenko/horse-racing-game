@@ -1,0 +1,75 @@
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100vh;
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+#app {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.common-bg {
+  background: var(--bg-secondary);
+}
+
+.subtitle {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  @apply rounded-full text-center text-sm px-4 py-2.5 shadow-xs font-medium leading-5 border uppercase;
+}
+
+.sticky-header {
+  @apply sticky top-0 z-20 bg-[var(--bg-main)] px-4 pt-4 pb-1 shadow-sm;
+}
+
+.default-btn {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  @apply rounded-full text-sm px-4 py-2.5 shadow-xs font-medium leading-5 border uppercase cursor-pointer disabled:bg-stone-300 disabled:text-stone-500 disabled:cursor-not-allowed;
+}
+
+.scroll-area,
+body {
+  @apply overflow-y-auto;
+  scrollbar-gutter: stable;
+}
+
+.scroll-area::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    var(--text-secondary) 0%,
+    var(--bg-secondary) 100%
+  );
+  border-radius: 10px;
+}
