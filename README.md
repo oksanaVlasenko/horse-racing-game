@@ -23,13 +23,18 @@ Horse Racing is an interactive web application built with Vue 2 and Vite. It let
 - Jest for testing
 - Vuex for state management
 
+# Horse Racing Game 🏇
+
+Try the game online: [https://oksanavlasenko.github.io/horse-racing-game/](https://oksanavlasenko.github.io/horse-racing-game/)  
+Or run it locally on your machine.
+
 ## Getting Started
 
 Follow these steps to run the project locally:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/oksanaVlasenko/horse-racing.git
+git clone https://github.com/oksanaVlasenko/horse-racing-game.git
 ```
 ### 2.Navigate to the project folder and install dependencies
 

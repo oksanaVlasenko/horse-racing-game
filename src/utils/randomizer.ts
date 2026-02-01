@@ -57,8 +57,7 @@ export const getUniqueConditions = (count: number): number[] => {
     throw new Error('Condition range 1–100 cannot provide that many unique values')
   }
 
-  // const pool = Array.from({ length: 100 }, (_, i) => i + 1)
-  const pool = Array.from({ length: 31 }, (_, i) => i + 70)
+  const pool = Array.from({ length: 100 }, (_, i) => i + 1)
   return shuffle(pool).slice(0, count)
 }
 
