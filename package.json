@@ -2,7 +2,7 @@
   "name": "horse-racing",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://oksanaVlasenko.github.io/horse-racing",
+  "homepage": "https://oksanaVlasenko.github.io/horse-racing-game",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

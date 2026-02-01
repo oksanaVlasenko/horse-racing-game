@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue2'
 import path from 'path'
 
 export default defineConfig({
-  base: '/horse-racing/',
+  base: '/horse-racing-game/',
   plugins: [
     vue()
   ],
